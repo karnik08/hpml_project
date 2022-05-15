@@ -30,6 +30,7 @@ Basically I already put the `chair` dataset and a trained model as an example in
 #### Training
 * Use `python main.py` to train the model.
 * We have used different hyper_parameters to train and test the model and you can change the set of parameters in `param.py`. Please select `hyper_set` value between `1-9` to select the hyper-parameter set you want to train model.
+* During training, model weights and some 3D reconstruction images would be also logged to the `outputs` folders, respectively, for every `model_save_step` number of step in `params.py`.
 
 #### Evaluation
 * For evaluation for trained model, you can run `python main.py --test=True` to call `tester.py`.
