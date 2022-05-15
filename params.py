@@ -7,11 +7,11 @@ Managers of all hyper-parameters
 
 import torch
 
-hyper_set=3
+hyper_set=8 
 
 
 #constants
-epochs = 1000
+epochs = 1
 soft_label = False
 adv_weight = 0
 d_thresh = 0.8
@@ -58,9 +58,9 @@ model_dir = 'chair/'  # change it to train on other data models
 # output_dir = '../outputs_LReLU'
 # output_dir = '../outputs_3dgan'
 # output_dir = '../outputs_lr'
-output_dir = '../outputs_tanh'
+# output_dir = '../outputs_tanh'
 # output_dir = '../outputs_loss'
-# output_dir = '../outputs'
+output_dir = '../outputs'
 # output_dir = '../outputs_real'
 # output_dir = '../outputs_desk'
 # images_dir = '../test_outputs'
