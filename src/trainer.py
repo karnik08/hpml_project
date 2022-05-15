@@ -78,7 +78,7 @@ def trainer(args):
     train_dsets = ShapeNetDataset(dsets_path, args, "train")
     # val_dsets = ShapeNetDataset(dsets_path, args, "val")
     if torch.cuda.is_available():
-        
+
         train_dset_loaders = torch.utils.data.DataLoader(train_dsets, batch_size=params.batch_size*torch.cuda.device_count(), shuffle=True,
                                                          num_workers=2)
     else:
@@ -107,7 +107,7 @@ def trainer(args):
     # print (x)
     D.to(params.device)
     G.to(params.device)
-    
+
     if params.hyper_set==7:
         D_solver = optim.SGD(D.parameters(), lr=params.d_lr, momentum=0.9)
     #     D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
@@ -116,26 +116,26 @@ def trainer(args):
         D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
     #     D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
         G_solver = optim.Adadelta(G.parameters(), lr=params.g_lr)
-    else:        
+    else:
         D_solver = optim.Adam(D.parameters(), lr=params.d_lr, betas=params.beta)
     #     D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
         G_solver = optim.Adam(G.parameters(), lr=params.g_lr, betas=params.beta)
-        
-        
+
+
     criterion_D = nn.MSELoss()
     criterion_G = nn.L1Loss()
-    
+
     itr_val = -1
     itr_train = -1
-    
+
     ##gathering losses for plotting
     generator_recon_losses=[]
     generator_adv_losses=[]
     descriminator_real_losses=[]
     descriminator_fake_losses=[]
     per_epoch_time=[]
-    
-    
+
+
     for epoch in range(params.epochs):
 
         start = time.time()
@@ -234,10 +234,10 @@ def trainer(args):
                 running_loss_G += recon_g_loss.item() * X.size(0)
                 running_loss_D += d_loss.item() * X.size(0)
                 running_loss_adv_G += adv_g_loss.item() * X.size(0)
-                
-                
-           
-                
+
+
+
+
                 if args.logs:
                     loss_G = {
                         'adv_loss_G': adv_g_loss,
@@ -259,7 +259,7 @@ def trainer(args):
             epoch_loss_G = running_loss_G / dset_len[phase]
             epoch_loss_D = running_loss_D / dset_len[phase]
             epoch_loss_adv_G = running_loss_adv_G / dset_len[phase]
-            
+
             #appending losses for each data
             generator_recon_losses.append(recon_g_loss.cpu().detach().numpy())
             generator_adv_losses.append(adv_g_loss.cpu().detach().numpy())
@@ -283,7 +283,7 @@ def trainer(args):
                 # image_saved_path = '../images'
 
                 SavePloat_Voxels(samples, image_saved_path, epoch)
-    
+
     #saving loss graphs as image
 #     plot1=plt()
     plt.plot(generator_recon_losses)

@@ -3,8 +3,6 @@
 #SBATCH --job-name=hpml_project_git
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
-#SBATCH --mail-type=END
-##SBATCH --mail-user=kp2670@nyu.edu 
 #SBATCH --time=06:00:00
 #SBATCH --mem=20GB
 #SBATCH --gres=gpu:1

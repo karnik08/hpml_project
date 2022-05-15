@@ -24,32 +24,32 @@ model_save_step = 1
 
 
 if hyper_set==1:
-    batch_size = 100 
+    batch_size = 100
     g_lr = 0.0025
     d_lr = 0.00001
     z_dis = "norm"
 elif hyper_set==2:
-    batch_size = 32 
+    batch_size = 32
     g_lr = 0.0020
     d_lr = 0.000005
     z_dis = "norm"
 elif hyper_set==3 or hyper_set==4:
-    batch_size = 100 
+    batch_size = 100
     g_lr = 0.0025
     d_lr = 0.00001
     z_dis = "norm"
 elif hyper_set==5:
-    batch_size = 32 
+    batch_size = 32
     g_lr = 0.0025
     d_lr = 0.00001
     z_dis = "uni"
-elif hyper_set==6 or hyper_set==7 or hyper_set==8 or hyper_set==9:
-    batch_size = 32 
+elif hyper_set==6 or hyper_set==7 or hyper_set==8:
+    batch_size = 32
     g_lr = 0.0025
     d_lr = 0.00001
     z_dis = "norm"
-    
-    
+
+
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 data_dir = '../volumetric_data/'
 model_dir = 'chair/'  # change it to train on other data models
