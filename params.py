@@ -7,11 +7,12 @@ Managers of all hyper-parameters
 
 import torch
 
+# choose the value according the the hyper parameters you want to use. 
 hyper_set=8 
 
 
 #constants
-epochs = 1
+epochs = 500
 soft_label = False
 adv_weight = 0
 d_thresh = 0.8
@@ -44,7 +45,8 @@ elif hyper_set==5:
     d_lr = 0.00001
     z_dis = "uni"
 elif hyper_set==6 or hyper_set==7 or hyper_set==8:
-    batch_size = 32
+    batch_size = 256
+#     batch_size = 32
     g_lr = 0.0025
     d_lr = 0.00001
     z_dis = "norm"
@@ -60,7 +62,8 @@ model_dir = 'chair/'  # change it to train on other data models
 # output_dir = '../outputs_lr'
 # output_dir = '../outputs_tanh'
 # output_dir = '../outputs_loss'
-output_dir = '../outputs'
+# output_dir = '../outputs'
+output_dir = '../outputs_256bs'
 # output_dir = '../outputs_real'
 # output_dir = '../outputs_desk'
 # images_dir = '../test_outputs'

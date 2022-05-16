@@ -35,7 +35,7 @@ Basically I already put the `chair` dataset and a trained model as an example in
 |-----------------------------|-----------|---------------|---------------|-----------------|---------------|---------------|---------------------|---------------------|---------------------|
 | Parameters                  |           |               |               |                 |               |               |                     |                     |                     |
 | Batch_size                  |           | 100           | 32            | 100             | 100           | 32            | 32                  | 32                  | 32                  |
-| Generator Learning rate     |           | 0.0025        | 0.0025        | 0.0025          | 0.0025        | 0.0025        | 0.0025              | 0.0025              | 0.0025              |
+| Generator Learning rate     |           | 0.0025        | 0.0020        | 0.0025          | 0.0025        | 0.0025        | 0.0025              | 0.0025              | 0.0025              |
 | Discriminator Learning rate |           | 0.00001       | 0.00002       | 0.00001         | 0.00001       | 0.00001       | 0.00001             | 0.00001             | 0.00001             |
 | Latent Vector Distribution  |           | Normal        | Normal        | Normal          | Normal        | Uniform       | Normal              | Normal              | Normal              |
 | Generator Activation        |           | Sigmoid, ReLU | Sigmoid, ReLU | Tanh,ReLU       | Sigmoid, ReLU | Sigmoid, ReLU | Sigmoid,Leaky ReLU  | Sigmoid, ReLU       | Sigmoid, ReLU       |
