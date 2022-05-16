@@ -54,5 +54,6 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 
  * [3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch)
  * [tf-3dgan](https://github.com/meetshah1995/tf-3dgan) 
+ * [pytorch-3dgan](https://github.com/xchhuang/simple-pytorch-3dgan)
 
 
