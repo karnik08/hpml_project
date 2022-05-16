@@ -1,13 +1,9 @@
 # hpml_project
 # Simple 3D-GAN-PyTorch
 
-<!-- [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/meetshah1995/tf-3dgan/blob/master/LICENSE)
-[![arXiv Tag](https://img.shields.io/badge/arXiv-1610.07584-brightgreen.svg)](https://arxiv.org/abs/1610.07584)
- -->
-
 ## Introuction
 
-* This is a very simple-to-use pytorch implementation of part of the [paper](https://arxiv.org/abs/1610.07584) "Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling". I provide the complete pipeline of loading dataset, training, evaluation and visualization here and also I would share some results based on different parameter settings.
+* This is a pytorch implementation of the paper[paper](https://arxiv.org/abs/1610.07584)"Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling"that is very easy to use. I'll show you the entire process from importing the dataset to training, evaluation, and visualization, as well as sample results based on various parameter values.
 
 
 ### Prerequisites
@@ -20,7 +16,7 @@
 
 ### Pipeline
 
-Basically I already put the `chair` dataset and a trained model as an example in `volumetric_data` and `outputs` folders. You can directly go to the training or evaluation part. But I still give a complete pipeline here.
+I just put the `chair` dataset and a trained model in the `volumetric data`. When you train the model `outputs` folder will be created and you can see the logs and out images in it. You can skip right to the training or evaluation sections. However, I provide a whole pipeline here.
 
 #### Data
 
@@ -56,5 +52,6 @@ Basically I already put the `chair` dataset and a trained model as an example in
 
 ### Acknowledgements
 
-* This code is a heavily modified version based on both [3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch) and [tf-3dgan](https://github.com/meetshah1995/tf-3dgan) and thanks for them. Here I try to build a simpler but more complete pipeline, and explore more results with different settings as well.
+*This code is a highly modified version of [3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch) and [tf-3dgan](https://github.com/meetshah1995/tf-3dgan), for which I am grateful. Here, I aim to design a simpler but more thorough pipeline while also experimenting with different parameters.
+
 

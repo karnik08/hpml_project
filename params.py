@@ -56,16 +56,17 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 data_dir = '../volumetric_data/'
 model_dir = 'chair/'  # change it to train on other data models
 # model_dir = 'desk/'
-# output_dir = '../outputs_uni'
-# output_dir = '../outputs_LReLU'
-# output_dir = '../outputs_3dgan'
-# output_dir = '../outputs_lr'
-# output_dir = '../outputs_tanh'
-# output_dir = '../outputs_loss'
-# output_dir = '../outputs'
-output_dir = '../outputs_256bs'
-# output_dir = '../outputs_real'
-# output_dir = '../outputs_desk'
+# output_dir = '../outputs_1'          #hyper_set=1
+# output_dir = '../outputs_2'          #hyper_set=2
+# output_dir = '../outputs_3'          #hyper_set=3
+# output_dir = '../outputs_4'          #hyper_set=4
+# output_dir = '../outputs_5'          #hyper_set=5
+# output_dir = '../outputs_6'          #hyper_set=6
+# output_dir = '../outputs_7'          #hyper_set=7
+# output_dir = '../outputs_8'          #hyper_set=8
+# output_dir = '../outputs_256bs'      #hyper_set=8
+# output_dir = '../outputs_1000epoch'  #hyper_set=8
+# output_dir = '../outputs_2gpu'       #hyper_set=8
 # images_dir = '../test_outputs'
 
 
