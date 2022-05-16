@@ -170,9 +170,10 @@ def trainer(args):
                 # print (batch)
 
                 Z = generateZ(args, batch)
-                # print (Z.size())
+                print ('generator input shape',Z.size())
 
                 # ============= Train the discriminator =============#
+                print ('Discriminator input shape',X.size())
                 d_real = D(X)
 
                 fake = G(Z)
