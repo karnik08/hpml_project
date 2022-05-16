@@ -3,7 +3,7 @@
 
 ## Introuction
 
-* This is a pytorch implementation of the paper[paper](https://arxiv.org/abs/1610.07584)"Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling"that is very easy to use. I'll show you the entire process from importing the dataset to training, evaluation, and visualization, as well as sample results based on various parameter values.
+* This is a pytorch implementation of the [paper](https://arxiv.org/abs/1610.07584)"Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling"that is very easy to use. I'll show you the entire process from importing the dataset to training, evaluation, and visualization, as well as sample results based on various parameter values.
 
 
 ### Prerequisites
