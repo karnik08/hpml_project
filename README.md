@@ -21,7 +21,7 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 #### Data
 
 * We provide the chair dataset in `volumetric_data` folder from [ModelNet](http://3dshapenets.cs.princeton.edu/3DShapeNetsCode.zip). As we use ModelNet instead of ShapeNet here, the results may be inconsistent with the paper.
-* download the data from [here](https://drive.google.com/file/d/1azxHE830qjntfrwGxSoZZhavnXio99mZ/view?usp=sharing)
+* Download the data from [data](https://drive.google.com/file/d/1azxHE830qjntfrwGxSoZZhavnXio99mZ/view?usp=sharing)
 * please unzip the `volumetric_data.zip` to use it for training and testing. 
 
 #### Training
@@ -52,7 +52,7 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 
 ### Acknowledgements
 
- *[3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch)
- *[tf-3dgan](https://github.com/meetshah1995/tf-3dgan) 
+ * [3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch)
+ * [tf-3dgan](https://github.com/meetshah1995/tf-3dgan) 
 
 
