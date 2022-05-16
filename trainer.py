@@ -110,8 +110,11 @@ def trainer(args):
 
     if params.hyper_set==7:
         D_solver = optim.SGD(D.parameters(), lr=params.d_lr, momentum=0.9)
+        # D_solver = optim.SGD(D.parameters(), lr=params.d_lr)
     #     D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
+        # G_solver = optim.Adam(G.parameters(), lr=params.g_lr, betas=params.beta)
         G_solver = optim.SGD(G.parameters(), lr=params.g_lr, momentum=0.9)
+        # G_solver = optim.SGD(G.parameters(), lr=params.g_lr)
     elif params.hyper_set==4:
         D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
     #     D_solver = optim.Adadelta(D.parameters(), lr=params.d_lr)
@@ -170,10 +173,10 @@ def trainer(args):
                 # print (batch)
 
                 Z = generateZ(args, batch)
-                print ('generator input shape',Z.size())
+                # print ('generator input shape',Z.size())
 
                 # ============= Train the discriminator =============#
-                print ('Discriminator input shape',X.size())
+                # print ('Discriminator input shape',X.size())
                 d_real = D(X)
 
                 fake = G(Z)

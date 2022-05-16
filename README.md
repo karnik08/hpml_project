@@ -21,6 +21,7 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 #### Data
 
 * We provide the chair dataset in `volumetric_data` folder from [ModelNet](http://3dshapenets.cs.princeton.edu/3DShapeNetsCode.zip). As we use ModelNet instead of ShapeNet here, the results may be inconsistent with the paper.
+* download the data from [here](https://drive.google.com/file/d/1azxHE830qjntfrwGxSoZZhavnXio99mZ/view?usp=sharing)
 * please unzip the `volumetric_data.zip` to use it for training and testing. 
 
 #### Training
@@ -46,12 +47,12 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 
 #### Evaluation
 * For evaluation for trained model, you can run `python main.py --test=True` to call `tester.py`.
-* If you want to visualize using visdom, first run `python -m visdom.server`, then `python main.py --test=True --use_visdom=True`.
 * `results` folder containes training log and certain images of the 3D generated images with respect to each `hyper_parameter seeting from 1-9`. 
 
 
 ### Acknowledgements
 
-*This code is a highly modified version of [3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch) and [tf-3dgan](https://github.com/meetshah1995/tf-3dgan), for which I am grateful. Here, I aim to design a simpler but more thorough pipeline while also experimenting with different parameters.
+ *[3DGAN-Pytorch](https://github.com/rimchang/3DGAN-Pytorch)
+ *[tf-3dgan](https://github.com/meetshah1995/tf-3dgan) 
 
 
