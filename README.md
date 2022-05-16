@@ -33,7 +33,7 @@ I just put the `chair` dataset and a trained model in the `volumetric data`. Whe
 | Parameters                  |           |               |               |                 |               |               |                     |                     |                     |
 | Batch_size                  |           | 100           | 32            | 100             | 100           | 32            | 32                  | 32                  | 32                  |
 | Generator Learning rate     |           | 0.0025        | 0.0020        | 0.0025          | 0.0025        | 0.0025        | 0.0025              | 0.0025              | 0.0025              |
-| Discriminator Learning rate |           | 0.00001       | 0.00002       | 0.00001         | 0.00001       | 0.00001       | 0.00001             | 0.00001             | 0.00001             |
+| Discriminator Learning rate |           | 0.00001       | 0.000005       | 0.00001         | 0.00001       | 0.00001       | 0.00001             | 0.00001             | 0.00001             |
 | Latent Vector Distribution  |           | Normal        | Normal        | Normal          | Normal        | Uniform       | Normal              | Normal              | Normal              |
 | Generator Activation        |           | Sigmoid, ReLU | Sigmoid, ReLU | Tanh,ReLU       | Sigmoid, ReLU | Sigmoid, ReLU | Sigmoid,Leaky ReLU  | Sigmoid, ReLU       | Sigmoid, ReLU       |
 | Discriminator Activation    |           | Sigmoid, ReLU | Sigmoid, ReLU | Tanh,Leaky ReLU | SIgmoid, ReLU | Sigmoid, ReLU | Sigmoid, Leaky ReLU | sigmoid, Leaky ReLU | Sigmoid, Leaky ReLU |
